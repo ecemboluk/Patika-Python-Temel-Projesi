@@ -16,7 +16,16 @@ flatten_list(example_1)
 print(flat_list)
 flat_list.clear()
 
+
 # 2. SORU
+
+def flatten_list(liste):
+    for item in liste:
+        if item.sort(reverse=True):
+            flatten_list(item)
+        else:
+            flat_list.append(item)
+
 
 example_2 = [[1, 2], [3, 4], [5, 6, 7]]
 flatten_list(example_2)
